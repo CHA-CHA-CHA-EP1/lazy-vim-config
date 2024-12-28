@@ -5,7 +5,7 @@
 vim.cmd("hi Normal guibg=#000000") -- UNCOMMENT THIS FOR BACKGROUND COLOR
 -- setting highlight Visual
 
--- vim.cmd("hi Visual guibg=#000000 guifg=#081726")
+-- vim.cmd("hi Visual guibg=#000000 guifg=#081726"
 vim.cmd("highlight CursorLine guibg=#081726")
 
 vim.keymap.set("n", "<Leader>dt", ":DapToggleBreakpoint<CR>")

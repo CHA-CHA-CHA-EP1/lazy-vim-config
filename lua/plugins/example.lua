@@ -55,10 +55,20 @@ return {
     -- change some options
     opts = {
       defaults = {
-        layout_strategy = "horizontal",
-        layout_config = { prompt_position = "top" },
-        sorting_strategy = "ascending",
-        winblend = 0,
+        -- การตั้งค่าทั่วไป
+        layout_strategy = "vertical",
+        layout_config = {
+          vertical = {
+            width = 0.9, -- ความกว้าง 90% ของหน้าจอ
+            height = 0.9, -- ความสูง 90% ของหน้าจอ
+            preview_height = 0.5, -- ความสูงของส่วนตัวอย่าง
+            prompt_position = "top", -- ตำแหน่งของช่องค้นหา
+          },
+        },
+        -- layout_strategy = "horizontal",
+        -- layout_config = { prompt_position = "top" },
+        -- sorting_strategy = "ascending",
+        -- winblend = 0,
       },
     },
   },

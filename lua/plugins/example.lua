@@ -41,37 +41,37 @@ return {
   },
 
   -- change some telescope options and a keymap to browse plugin files
-  {
-    "nvim-telescope/telescope.nvim",
-    keys = {
-      -- add a keymap to browse plugin files
-      -- stylua: ignore
-      {
-        "<leader>fp",
-        function() require("telescope.builtin").find_files({ cwd = require("lazy.core.config").options.root }) end,
-        desc = "Find Plugin File",
-      },
-    },
-    -- change some options
-    opts = {
-      defaults = {
-        -- การตั้งค่าทั่วไป
-        layout_strategy = "vertical",
-        layout_config = {
-          vertical = {
-            width = 0.9, -- ความกว้าง 90% ของหน้าจอ
-            height = 0.9, -- ความสูง 90% ของหน้าจอ
-            preview_height = 0.5, -- ความสูงของส่วนตัวอย่าง
-            prompt_position = "top", -- ตำแหน่งของช่องค้นหา
-          },
-        },
-        -- layout_strategy = "horizontal",
-        -- layout_config = { prompt_position = "top" },
-        -- sorting_strategy = "ascending",
-        -- winblend = 0,
-      },
-    },
-  },
+  -- {
+  --   "nvim-telescope/telescope.nvim",
+  --   keys = {
+  --     -- add a keymap to browse plugin files
+  --     -- stylua: ignore
+  --     {
+  --       "<leader>fp",
+  --       function() require("telescope.builtin").find_files({ cwd = require("lazy.core.config").options.root }) end,
+  --       desc = "Find Plugin File",
+  --     },
+  --   },
+  --   -- change some options
+  --   opts = {
+  --     defaults = {
+  --       -- การตั้งค่าทั่วไป
+  --       layout_strategy = "horizontal",
+  --       layout_config = {
+  --         horizontal = {
+  --           width = 0.9, -- ความกว้าง 90% ของหน้าจอ
+  --           height = 0.9, -- ความสูง 90% ของหน้าจอ
+  --           preview_height = 0.5, -- ความสูงของส่วนตัวอย่าง
+  --           prompt_position = "top", -- ตำแหน่งของช่องค้นหา
+  --         },
+  --       },
+  --       -- layout_strategy = "horizontal",
+  --       -- layout_config = { prompt_position = "top" },
+  --       -- sorting_strategy = "ascending",
+  --       -- winblend = 0,
+  --     },
+  --   },
+  -- },
 
   -- add pyright to lspconfig
   {

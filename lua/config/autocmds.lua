@@ -2,7 +2,7 @@
 -- Default autocmds that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/autocmds.lua
 -- Add any additional autocmds here
 --
--- Dark mode
+-- Dark mode Disable darkmode
 vim.cmd("hi Normal guibg=#000000")
 --
 --
@@ -34,3 +34,6 @@ vim.cmd("highlight Conditional cterm=italic gui=italic")
 vim.cmd("highlight Repeat cterm=italic gui=italic")
 
 vim.o.guifont = "Victor Mono:h14"
+
+vim.g.lazyvim_ruby_lsp = "solargraph"
+vim.g.lazyvim_ruby_formatter = "rubocop"

@@ -3,7 +3,7 @@ return {
     "nvim-treesitter/nvim-treesitter",
     opts = function(_, opts)
       if type(opts.ensure_installed) == "table" then
-        vim.list_extend(opts.ensure_installed, { "gleam", "proto", "haskell" })
+        vim.list_extend(opts.ensure_installed, { "ruby" })
       end
     end,
   },
@@ -11,9 +11,7 @@ return {
     "neovim/nvim-lspconfig",
     opts = {
       servers = {
-        gleam = {},
-        bufls = {}, -- Protocol Buffer LSP
-        hls = {},
+        solargraph = {},
       },
     },
   },
